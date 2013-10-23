@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML5 - From performant websites to multiplayer web based games | Avangate Tech Sessions</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="plugin/google-code-prettify/prettify.css" />
+		<script src="plugin/google-code-prettify/run_prettify.js"></script>
+		<style type="text/css">
+		.reveal section img { border:none; box-shadow:none; }
+		.reveal h2 {
+		text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+		}		
+		xmp { font-size:55%; text-align:left; line-height: 1.1em; }
+		</style>
+	</head>
+
+	<body>
+
+<div class="reveal">
+	<div class="slides">
+	
+		<section>
+			<p><img src="imgs/HTML5.png" border="0"></p>
+			<p>From performant websites to multiplayer web based games</p>
+		</section>
+			
+		<section>
+			<div style="float:left; margin-top:150px;">
+				<h2>Serban Ghita</h2>
+				<span style="font-size: 29.95642852783203px; font-style: normal; font-variant: normal;">Developer @ Avangate.com</span>	
+				<div style="margin-top:50px;"><a href="http://ghita.org">http://ghita.org</a></div>
+				<div><a href="https://github.com/serbanghita">https://github.com/serbanghita</a></div>
+			</div>
+			<img width="400" src="imgs/serban_ghita.jpg" style="float:left;border-radius: 20px;box-shadow: 4px 4px 4px #3b759e; margin-left: 50px;" border="0">
+		</section>
+		
+		<section>
+			<h2>What is HTML5?</h2>
+		</section>
+		
+		<section data-transition="fade">
+			<h2>What is HTML5?</h2>
+			<ol>
+				<li>upgrade for HTML 4.01 and XHTML 1.1</li>
+			</ol>
+		</section>
+		
+		<section data-transition="fade">
+			<h2>What is HTML5?</h2>
+			
+			<ol>
+				<li>upgrade for HTML 4.01 and XHTML 1.1</li>
+				<li>new HTML tags and attributes</li>
+			</ol>
+		</section>		
+
+		<section data-transition="fade">
+			<h2>What is HTML5?</h2>
+			
+			<ol>
+				<li>upgrade for HTML 4.01 and XHTML 1.1</li>
+				<li>new HTML tags and attributes</li>
+				<li>a new set of APIs for browsers</li>
+			</ol>
+		</section>
+
+		<section data-transition="fade">
+			<h2>What is HTML5?</h2>
+			
+			<ol>
+				<li>upgrade for HTML 4.01 and XHTML 1.1</li>
+				<li>new HTML tags and attributes</li>
+				<li>a new set of APIs for browsers</li>
+				<li>different mindset</li>
+			</ol>
+		</section>		
+		
+		<section data-transition="fade">
+			<h2>What is HTML5?</h2>
+			
+			<ol>
+				<li>upgrade for HTML 4.01 and XHTML 1.1</li>
+				<li>new HTML tags and attributes</li>
+				<li>a new set of APIs for browsers</li>
+				<li>different mindset</li>
+				<li>departure from 3<sup>rd</sup> party plugins</li>
+			</ol>
+		</section>
+		
+		<section>
+			<h2>What is HTML5?</h2>
+			
+			<table>
+				<tr>
+					<td style="vertical-align:middle;"><img src="imgs/HTML5.png" /></td>
+					<td style="vertical-align:middle;"><img src="imgs/equal.png" /></td>
+					<td style="vertical-align:middle;"><img src="imgs/HTML.png" /></td>
+					<td style="vertical-align:middle;"><img src="imgs/plus.png" /></td>
+					<td style="vertical-align:middle;"><img src="imgs/CSS3.png" /></td>
+					<td style="vertical-align:middle;"><img src="imgs/plus.png" /></td>
+					<td style="vertical-align:middle;"><img src="imgs/JS.png" /></td>
+				</tr>
+			</table>
+		</section>
+		
+		<section>
+			<h2>New features</h2>
+		</section>
+		
+		<section>
+			<div><img src="imgs/HTML5-APIs-and-related-technologies-by-Sergey-Mavrody.png" /></div>
+			<div><small>Credits: Sergey Mavrody</small></div>
+		</section>
+		
+		<section>
+			<h2>HTML markup</h2>			
+		</section>
+		
+		<section>
+			<h6>HTML markup</h6>
+			<h2>Doctype</h2>
+			
+			<div>Old:</div>
+<xmp class="prettyprint lang-html">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+</xmp>
+			
+			<div>New:</div>
+<xmp class="prettyprint lang-html">
+<!DOCTYPE html>
+</xmp>
+			
+		</section>
+		
+		<section>
+			<h6>HTML markup</h6>
+			<h2>Simple structure</h2>
+			
+<xmp class="prettyprint lang-html">
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The title</title>
+	</head>
+	<body>
+		<p>The body</p>
+	</body>
+</html>
+</xmp>
+			
+		</section>
+		
+	</div>
+</div>
+		<script src="js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		
+
+		<script>
+			
+			function startPresentation(){	
+			
+				Reveal.initialize({
+					dependencies: [			
+						{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+						
+					],
+					center: true,				
+					controls: false,
+					transition: 'concave',
+					transitionSpeed: 'fast',
+					backgroundTransition: 'linear',
+					progress: true,
+					keyboard: true,
+					history: true
+				});
+			}
+			
+			window.addEventListener("load", startPresentation, false);
+
+		</script>
+
+	</body>
+</html>
