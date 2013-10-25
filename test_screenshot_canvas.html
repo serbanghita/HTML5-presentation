@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Canvas screenshot output test" />
+        <title>Testing Sheet by Şerban Ghiţă | Avangate Tech Sessions</title>
+    </head>
+    <body></body>
+</html>
+
+
+
+
+
+
+
+<script>
+    var createTheTest = function(){
+
+        // Create the canvas element.
+        var canvas    = document.createElement('canvas');
+        canvas.id     = 'canvasTest';
+        canvas.width  = 200;
+        canvas.height = 150;
+        canvas.setAttribute('style', 'border:1px dotted black;');
+
+        // Append to DOM.
+        document.body.appendChild( canvas );
+
+        // Get the 2d context.
+        var ctx  = canvas.getContext('2d');
+
+        ctx.fillStyle = "rgb(200,0,0)";
+        ctx.fillRect(10, 10, 55, 50);
+
+        ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+        ctx.fillRect(30, 30, 55, 50);
+
+        // Draw the text
+        ctx.fillStyle = "#000";
+        ctx.font = '20px Tahoma';
+        ctx.fillText('Like a bawsz!', 0, 100);
+
+        // Save the screenshot
+        var url = canvas.toDataURL();
+
+        // Create the output the image
+        var img = new Image();
+        img.id = 'output';
+          img.setAttribute('style', 'border:1px dotted red;');
+        img.src = url;
+
+        // Append to DOM.
+        document.body.appendChild( img );
+
+    };
+
+    window.addEventListener( "load", createTheTest, false );
+</script>

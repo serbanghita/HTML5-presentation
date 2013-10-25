@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Testing Sheet by Şerban Ghiţă | Avangate Tech Sessions</title>
+        <style>
+            .header, .footer { width:600px; border:1px dotted #ccc; }
+            .header { background: #BDE3F2; }
+            .main { width:600px; background: white; }
+            .footer { background: #C3F2BD; }
+            .mainTests { width: 600px; border:1px dotted blue; margin:10px 0px; }
+        </style>
+
+        <script src="js/html2canvas.js"></script>
+        <script>
+            var takeScreenshot = function(){
+                html2canvas(document.body, {
+                  onrendered: function(canvas) {
+                    document.body.appendChild(canvas);
+                  }
+                });
+                console.log('Done');
+            }
+            var bindTakeScreenshot = function(){
+                document.getElementById('takeScreenshot').addEventListener('click', takeScreenshot, false);
+            }
+
+            window.addEventListener( "load", bindTakeScreenshot, false );
+        </script>
+
+    </head>
+    <body>
+        <header class="header">
+            <h1>Test</h1>
+        </header>
+        <main class="main">
+            <section class="mainTests">
+
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" width="165">
+                        <img src="http://www.avangate.com/docs/en/events/HTML5_Logo_h200px.png" border="0" alt="HTML5" title="HTML5" />
+                    </td>
+                    <td valign="top">
+                        <table width="100%" cellspacing="0" cellspacing="0" border="0">
+                            <tr>
+                                <td valign="top" align="left">
+                                    <div class="banner-title">HTML5</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="banner-text" valign="top">De la site-uri mai performante la jocuri web multiplayer</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Fie ca lucrezi la site-uri simple, aplicatii web de tipul single-page sau dezvolti jocuri web online, HTML5 iti
+                                        ofera o serie de caracteristici de top pe care le poti folosi cu usurinta indiferent de complexitatea proiectului tau.</p>
+                                    <p><b>Nota:</b> Prezentarea va fi sustinuta in limba romana.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="separator" colspan="2">&nbsp;</td>
+                </tr>
+            </table>
+
+            <img src="imgs/serban_ghita.png" style="float:left; margin-right:10px;"> <p>Sper ca aceasta prezentare din cadrul primei intalniri <b>Avangate Tech Sessions</b> va va ajuta sa nu
+                repetati greselile mele si va va ghida in utilizarea caracteristicilor HTML5 in activitatea voastra zilnica.</p>
+
+            <div style="clear:both;"></div>
+
+            <button id="takeScreenshot">Click!</button>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Copyright @ 2013</p>
+        </footer>
+    </body>
+</html>

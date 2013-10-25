@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 	<head>
@@ -8,16 +8,15 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
-		<link rel="stylesheet" href="plugin/google-code-prettify/prettify.css" />
-		<script src="plugin/google-code-prettify/run_prettify.js"></script>
+	    <link rel="stylesheet" href="css/reveal.css">
+	    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+	    <!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+
 		<style type="text/css">
-		.reveal section img { border:none; box-shadow:none; }
-		.reveal h2 {
-		text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
-		}		
-		xmp { font-size:55%; text-align:left; line-height: 1.1em; }
+			.reveal section img { border:none; box-shadow:none; background:none; }
+			.em2 { color:#ED9D13 !important; }
 		</style>
 	</head>
 
@@ -25,166 +24,332 @@
 
 <div class="reveal">
 	<div class="slides">
-	
-		<section>
-			<p><img src="imgs/HTML5.png" border="0"></p>
-			<p>From performant websites to multiplayer web based games</p>
-		</section>
-			
-		<section>
-			<div style="float:left; margin-top:150px;">
-				<h2>Serban Ghita</h2>
-				<span style="font-size: 29.95642852783203px; font-style: normal; font-variant: normal;">Developer @ Avangate.com</span>	
-				<div style="margin-top:50px;"><a href="http://ghita.org">http://ghita.org</a></div>
-				<div><a href="https://github.com/serbanghita">https://github.com/serbanghita</a></div>
-			</div>
-			<img width="400" src="imgs/serban_ghita.jpg" style="float:left;border-radius: 20px;box-shadow: 4px 4px 4px #3b759e; margin-left: 50px;" border="0">
-		</section>
-		
-		<section>
-			<h2>What is HTML5?</h2>
-		</section>
-		
-		<section data-transition="fade">
-			<h2>What is HTML5?</h2>
-			<ol>
-				<li>upgrade for HTML 4.01 and XHTML 1.1</li>
-			</ol>
-		</section>
-		
-		<section data-transition="fade">
-			<h2>What is HTML5?</h2>
-			
-			<ol>
-				<li>upgrade for HTML 4.01 and XHTML 1.1</li>
-				<li>new HTML tags and attributes</li>
-			</ol>
-		</section>		
 
-		<section data-transition="fade">
-			<h2>What is HTML5?</h2>
-			
-			<ol>
-				<li>upgrade for HTML 4.01 and XHTML 1.1</li>
-				<li>new HTML tags and attributes</li>
-				<li>a new set of APIs for browsers</li>
-			</ol>
-		</section>
+	<section>
+		<p><img src="imgs/HTML5.png" border="0"></p>
+		<p>From performant websites to multiplayer web based games</p>
+	</section>
 
-		<section data-transition="fade">
-			<h2>What is HTML5?</h2>
-			
+	<section>
+		<div style="float:left; margin-top:150px;">
+			<h2>Serban Ghita</h2>
+			<span style="font-size: 29.95642852783203px; font-style: normal; font-variant: normal;">Developer @ Avangate.com</span>
+			<div style="margin-top:50px;"><a href="http://ghita.org">http://ghita.org</a></div>
+			<div><a href="https://github.com/serbanghita">https://github.com/serbanghita</a></div>
+		</div>
+		<img width="400" src="imgs/serban_ghita.jpg" style="float:left;border-radius: 20px;box-shadow: 4px 4px 4px #3b759e; margin-left: 50px;" border="0">
+	</section>
+
+	<section data-transition="fade">
+
+		<h2>What is HTML5?</h2>
+
+		<ol>
+			<li class="fragment">upgrade for <span class="em2">HTML 4.01</span> and <span class="em2">XHTML 1.1</span></li>
+			<li class="fragment"><span class="em2">new</span> HTML tags and attributes</li>
+			<li class="fragment">a new set of <span class="em2">APIs</span> for browsers</li>
+			<li class="fragment"><span class="em2">different mindset</span></li>
+			<li class="fragment"><span class="em2">departure</span> from 3<sup>rd</sup> party plugins</li>
+		</ol>
+	</section>
+
+	<section>
+		<h2>What is HTML5?</h2>
+
+		<table>
+			<tr>
+				<td style="vertical-align:middle;"><img src="imgs/HTML5.png" /></td>
+				<td style="vertical-align:middle;"><img src="imgs/equal.png" /></td>
+				<td style="vertical-align:middle;"><img src="imgs/HTML.png" /></td>
+				<td style="vertical-align:middle;"><img src="imgs/plus.png" /></td>
+				<td style="vertical-align:middle;"><img src="imgs/CSS3.png" /></td>
+				<td style="vertical-align:middle;"><img src="imgs/plus.png" /></td>
+				<td style="vertical-align:middle;"><img src="imgs/JS.png" /></td>
+			</tr>
+		</table>
+	</section>
+
+	<section>
+		<h2>New features</h2>
+	</section>
+
+	<section>
+		<div style="background:white;border-radius:50%; border:5px solid #ddd;"><img src="imgs/HTML5-APIs-and-related-technologies-by-Sergey-Mavrody.png" /></div>
+		<div><small>Credits: Sergey Mavrody</small></div>
+	</section>
+
+	<section>
+		<h2>Notable markup differences</h2>
+
+		<ol>
+			<li class="fragment">New parsing rules for browsers. Both <span class="em2">&lt;img src="test.jpg" /&gt;</span> and <span class="em2">&lt;img src="test.jpg"&gt;</span> accepted.</li>
+			<li class="fragment">New tags: <span class="em2">&lt;article&gt;</span> ... <span class="em2">&lt;video&gt;</span>, <span class="em2">&lt;track&gt;</span>, <span class="em2">&lt;audio&gt;</span> ... <span class="em2">&lt;canvas&gt;</span> ...</li>
+			<li class="fragment">New form controls: <span class="em2">email</span>, <span class="em2">number</span>, <span class="em2">search</span>, <span class="em2">url</span>, <span class="em2">range</span>, <span class="em2">date</span>, <span class="em2">time</span>,  <span class="em2">tel</span>, <span class="em2">color</span></li>
+			<li class="fragment">New form control attributes: <span class="em2">placeholder</span>, <span class="em2">pattern</span>, <span class="em2">required</span>, <span class="em2">list</span>, <span class="em2">min</span>, <span class="em2">max</span>, <span class="em2">step</span>, etc.</li>
+			<li class="fragment">New attributes: <span class="em2">charset</span> (on <span class="em2">meta</span>), <span class="em2">async</span> (on <span class="em2">script</span>)</li>
+			<li class="fragment">Custom attributes: <span class="em2">data-*</span>. Set: <span class="em2">data-userid="1234"</span> Get: <span class="em2">elem.dataset.userid</span></li>
+		</ol>
+
+	</section>
+
+	<section>
+		<h2 class="em2">HTML markup</h2>
+	</section>
+
+	<section data-markdown="markup_doctype.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
+		<aside class="notes">
 			<ol>
-				<li>upgrade for HTML 4.01 and XHTML 1.1</li>
-				<li>new HTML tags and attributes</li>
-				<li>a new set of APIs for browsers</li>
-				<li>different mindset</li>
+			 	<li>DOCTYPE is case insensitive</li>
+			 	<li>DOCTYPE is easy to remember</li>
 			</ol>
-		</section>		
-		
-		<section data-transition="fade">
-			<h2>What is HTML5?</h2>
-			
-			<ol>
-				<li>upgrade for HTML 4.01 and XHTML 1.1</li>
-				<li>new HTML tags and attributes</li>
-				<li>a new set of APIs for browsers</li>
-				<li>different mindset</li>
-				<li>departure from 3<sup>rd</sup> party plugins</li>
-			</ol>
-		</section>
-		
-		<section>
-			<h2>What is HTML5?</h2>
-			
-			<table>
-				<tr>
-					<td style="vertical-align:middle;"><img src="imgs/HTML5.png" /></td>
-					<td style="vertical-align:middle;"><img src="imgs/equal.png" /></td>
-					<td style="vertical-align:middle;"><img src="imgs/HTML.png" /></td>
-					<td style="vertical-align:middle;"><img src="imgs/plus.png" /></td>
-					<td style="vertical-align:middle;"><img src="imgs/CSS3.png" /></td>
-					<td style="vertical-align:middle;"><img src="imgs/plus.png" /></td>
-					<td style="vertical-align:middle;"><img src="imgs/JS.png" /></td>
-				</tr>
-			</table>
-		</section>
-		
-		<section>
-			<h2>New features</h2>
-		</section>
-		
-		<section>
-			<div><img src="imgs/HTML5-APIs-and-related-technologies-by-Sergey-Mavrody.png" /></div>
-			<div><small>Credits: Sergey Mavrody</small></div>
-		</section>
-		
-		<section>
-			<h2>HTML markup</h2>			
-		</section>
-		
-		<section>
-			<h6>HTML markup</h6>
-			<h2>Doctype</h2>
-			
-			<div>Old:</div>
-<xmp class="prettyprint lang-html">
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-</xmp>
-			
-			<div>New:</div>
-<xmp class="prettyprint lang-html">
-<!DOCTYPE html>
-</xmp>
-			
-		</section>
-		
-		<section>
-			<h6>HTML markup</h6>
-			<h2>Simple structure</h2>
-			
-<xmp class="prettyprint lang-html">
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>The title</title>
-	</head>
-	<body>
-		<p>The body</p>
-	</body>
-</html>
-</xmp>
-			
-		</section>
-		
+		</aside>
+	</section>
+
+	<section data-markdown="markup_simple.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
+		<aside class="notes">
+		 <ol>
+		 	<li>meta charset is missing</li>
+		 	<li>Even without DOCTYPE or old DOCTYPE, Chrome, Opera, Firefox interpret new HTML5 attributes</li>
+		 <ol>
+		</aside>
+	</section>
+
+
+	<section data-transition="fade" data-markdown="markup_simple_charset.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+	<section data-markdown="new_tags.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
+		<aside class="notes">
+		 <ol>
+		 	<li>'article' can be nested. Nested articles are like a blog posts with comments.</li>
+		 	<li>'article' is similar with 'entry' or 'item' from XML feeds.</li>
+		 	<li>'article' can have a 'header' and footer' or multiple 'sections'.</li>
+		 	<li>'section' is for thematic grouping of elements.</li>
+		 	<li>don't use 'section' for styling, use 'div' and 'span' instead</li>
+		 	<li>use 'nav' only for major link navigation.</li>
+		 	<li>don't use 'nav' for the links in the 'footer'. 'footer' is sufficient.</li>
+		 <ol>
+		</aside>
+	</section>
+
+	<section data-markdown="new_tags_example_simple.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+	<section data-markdown="new_tags_example_full.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+	<section>
+		<h6>HTML Markup</h6>
+		<h2>New tags compatibility</h2>
+
+		<img src="imgs/new_tags_compatibility.png" />
+
+		<table style="margin:0 auto;">
+			<tr>
+				<td style="text-align:center;"><img src="imgs/chrome.png" width="100" /></td>
+				<td style="text-align:center;"><img src="imgs/firefox.png" width="100" /></td>
+				<td style="text-align:center;"><img src="imgs/opera.png" width="100" /></td>
+				<td style="text-align:center;"><img src="imgs/ie.png" width="100" /></td>
+				<td style="text-align:center;"><img src="imgs/safari.png" width="100" /></td>
+			</tr>
+			<tr>
+				<td style="text-align:center;">28</td>
+				<td style="text-align:center;">23</td>
+				<td style="text-align:center;">17</td>
+				<td style="text-align:center;">9</td>
+				<td style="text-align:center;">5.1</td>
+			</tr>
+		</table>
+
+	</section>
+
+	<section>
+		<h6>HTML Markup</h6>
+		<h2>New tags compatibility.</h2>
+
+		<div> What about <span class="em2">legacy browsers</span>?</div>
+	</section>
+
+	<section data-markdown="new_tags_compatibility.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+	<section>
+		<h6>HTML Markup</h6>
+		<h2>Microdata</h2>
+
+		<ul>
+			<li class="fragment">Article</li>
+			<li class="fragment">Book Reviews</li>
+			<li class="fragment">Events</li>
+			<li class="fragment">Local Businesses</li>
+			<li class="fragment">Movies</li>
+			<li class="fragment">Products</li>
+			<li class="fragment">Restaurants</li>
+			<li class="fragment"><span class="em2">Software Applications</span></li>
+			<li class="fragment">TV Episodes</li>
+		</ul>
+
+		<img src="imgs/microdata-cuttherope.png"  class="fragment" />
+
+	</section>
+
+	<section data-markdown="microdata.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+	<section>
+		<h2 class="em2">Notable APIs</h2>
+	</section>
+
+	<section>
+
+		<h6>Notable APIs</h6>
+
+		<ul>
+			<li class="fragment">Canvas 2D - <span class="em2">var ctx = canvasElem.getContext('2d');</span></li>
+			<li class="fragment">Web Storage - <span class="em2">window.localStorage</span></li>
+			<li class="fragment">Offline Web Applications - <span class="em2">window.applicationCache</span></li>
+			<li class="fragment">Geolocation - <span class="em2">navigator.geolocation</span></li>
+			<li class="fragment">Device orientation event - <span class="em2">deviceorientation</span></li>
+			<li class="fragment">Touch events - <span class="em2">touch(start|end|move|cancel)</span></li>
+			<li class="fragment">User media - <span class="em2">video</span>, <span class="em2">audio</span>, <span class="em2">x-webkit-speech</span></li>
+		</ul>
+	</section>
+
+	<section data-markdown="canvas.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+	<section data-markdown="canvas_screenshots_screen.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+	<section data-markdown="canvas_screenshots_canvas.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+	<!-- mentiune CSS3 3d transforms -->
+
+
+
+	<section>
+
+		<h6>Notable APIs</h6>
+		<h2>Web Storage, Touch Events, Offline Web Applications</h2>
+
+		<div>Live Demo: <a href="http://ghita.org/ux/chess/">Chess Web Application</a></div>
+		<div>Source: <a href="https://github.com/serbanghita/jQuery-Chess">GitHub</a></div>
+
+	</section>
+
+
+	<section>
+		<h2>Case studies</h2>
+
+		<ul>
+			<li class="fragment">Avangate Mobile Shopping Cart</li>
+			<li class="fragment">Avangate Visitor Web App</li>
+			<li class="fragment">Chess Web App</li>
+			<li class="fragment">Cut the Rope</li>
+			<li class="fragment">My multiplayer game</li>
+		</ul>
+	</section>
+
+	<section>
+		<h6>Case studies</h6>
+		<h2>Avangate Mobile Shopping Cart</h2>
+
+		<img src="imgs/Avangate Control Panel - Mobile Editor.png">
+
+		<!-- @todo: screenshots with the fields on mobile -->
+
+	</section>
+
+	<section data-transition="fade">
+		<h6>Case studies</h6>
+		<h2>Avangate Mobile Shopping Cart</h2>
+
+		<img src="imgs/cart/1.PNG" />
+	</section>
+
+	<section data-transition="fade">
+		<h6>Case studies</h6>
+		<h2>Avangate Mobile Shopping Cart</h2>
+
+		<img src="imgs/cart/2.PNG" />
+	</section>
+
+	<section data-transition="fade">
+		<h6>Case studies</h6>
+		<h2>Avangate Mobile Shopping Cart</h2>
+
+		<img src="imgs/cart/3.PNG" />
+	</section>
+
+	<section data-transition="fade">
+		<h6>Case studies</h6>
+		<h2>Avangate Mobile Shopping Cart</h2>
+
+		<img src="imgs/cart/4.PNG" />
+	</section>
+
+	<section data-transition="fade">
+		<h6>Case studies</h6>
+		<h2>Avangate Mobile Shopping Cart</h2>
+
+		<img src="imgs/cart/5.PNG" />
+	</section>
+
+	<section data-transition="fade">
+		<h6>Case studies</h6>
+		<h2>Avangate Mobile Shopping Cart</h2>
+
+		<img src="imgs/cart/6.PNG" />
+	</section>
+
+	<section data-transition="fade">
+		<h6>Case studies</h6>
+		<h2>Avangate Mobile Shopping Cart</h2>
+
+		<img src="imgs/cart/7.PNG" />
+	</section>
+
+	<section>
+		<h6>Case studies</h6>
+		<h2>Avangate Visitor Web App</h2>
+
+		<img src="imgs/av_visitor/entrance.jpg" style="border:2px solid white;" />
+		<!-- @todo: gasit poza -->
+		<!-- explicat diferenta intre GPU si CPU -->
+
+
+
 	</div>
 </div>
-		<script src="js/head.min.js"></script>
+
+
+
+
+
+	<!-- reveal.js stuff -->
+
+
+		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
-		
+
 
 		<script>
-			
-			function startPresentation(){	
-			
+
+
+
 				Reveal.initialize({
-					dependencies: [			
-						{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
-						
+					margin: 0.1,
+					dependencies: [
+						{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+						{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+						{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+						{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 					],
-					center: true,				
+					theme: Reveal.getQueryHash().theme,
+					center: true,
 					controls: false,
 					transition: 'concave',
 					transitionSpeed: 'fast',
 					backgroundTransition: 'linear',
 					progress: true,
 					keyboard: true,
-					history: true
+					history: true,
+					touch: true
 				});
-			}
-			
-			window.addEventListener("load", startPresentation, false);
+
 
 		</script>
 
