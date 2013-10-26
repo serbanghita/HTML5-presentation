@@ -103,7 +103,7 @@
 
 	<section>
 		<h2>Avangate Shopping Cart</h2>
-		<img src="imgs/Avangate Control Panel - Shopping Cart.png"> <!-- update the picture -->
+		<img src="imgs/Avangate Control Panel - Shopping Cart.png"> <!-- @todo: update the picture -->
 	</section>
 
 	<section>
@@ -131,6 +131,7 @@
 		<h2>Sumar prezentare</h2>
 
 		<ul style="margin-top:20px; font-size:80%;">
+			<li class="fragment">Termeni noi utilizati in prezentare</li>
 			<li class="fragment">Ce este <span class="em2">HTML5</span></li>
 			<li class="fragment">Care sunt noile facilitati (<span class="em2">markup</span> &amp; <span class="em2">APIs</span>)</li>
 			<li class="fragment">Parti bune, care sunt provocarile</li>
@@ -148,6 +149,7 @@
 			<li class="fragment">Mobile first</li>
 			<li class="fragment">Polyfills</li>
 			<li class="fragment">Milestones / Legacy</li>
+			<li class="fragment">Browser compatibility</li>
 		</ul>
 	</section>
 
@@ -194,6 +196,15 @@
 			ce poate functiona in mod diferit fata de cele anterioare, care devin automat <span class="em2">legacy</span>.</p>
 
 		<p style="margin-top:20px; font-size:80%;">Exemplu: <a href="https://secure.avangate.com/cpanel/design_edit.php?template=6200">Avangate Template Editor</a></p>
+
+	</section>
+
+	<section>
+		<h6>Termeni noi</h6>
+		<h2>Browser compatibility</h2>
+
+		<p>Abilitatea unui browser de a recunoaste o functionalitate noua.</p>
+		<p style="margin-top:20px; font-size:300%;"><a href="http://caniuse.com">can<span class="em2">i</span>use.com/...</a></p>
 
 	</section>
 
@@ -265,56 +276,74 @@
 		<h2>Tag-uri si atribute</h2>
 		<h6>Elemente noi</h6>
 
-		<table style="margin:10px auto 0;">
-			<tr>
-				<td class="em2">&lt;article&gt;</td>
-				<td class="em2">&lt;aside&gt;</td>
-				<td class="em2">&lt;header&gt;</td>
-				<td class="em2">&lt;footer&gt;</td>
-				<td class="em2">&lt;section&gt;</td>
-				<td class="em2">&lt;main&gt;</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td class="em2">&lt;canvas&gt;</td>
-				<td class="em2">&lt;audio&gt;</td>
-				<td class="em2">&lt;track&gt;</td>
-				<td class="em2">&lt;video&gt;</td>
-				<td class="em2">&lt;embed&gt;</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>bdi</td>
-				<td>command</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
+		<p>&lt;article&gt; &lt;aside&gt; &lt;header&gt; &lt;nav&gt; &lt;footer&gt; &lt;section&gt; &lt;main&gt;
+			&lt;summary&gt; <a href="http://jsbin.com/oVesip/2/edit">&lt;details&gt;</a> <a href="http://jsbin.com/EvotEpu/2/edit">&lt;figure&gt;</a> &lt;figcaption&gt; &lt;time&gt; <a href="http://jsbin.com/IhiSEnE/1/edit">&lt;datalist&gt;</a></p>
+		<p style="font-size:80%;">&lt;canvas&gt; &lt;audio&gt; &lt;track&gt; &lt;video&gt; &lt;embed&gt; &lt;source&gt;</p>
+		<p style="font-size:60%;">&lt;menu&gt; &lt;menuitem&gt; &lt;keygen&gt; <a href="http://jsbin.com/UXebuy/2/edit">&lt;mark&gt;</a> &lt;meter&gt; &lt;progress&gt; <br>&lt;rp&gt; &lt;rt&gt; &lt;ruby&gt; &lt;wbr&gt; &lt;bdi&gt; &lt;command&gt; &lt;output&gt; &lt;data&gt;</p>
+		<p></p>
 
 		<aside class="notes">
 	       <ul>
-	       		<li>bdi - bi-directional tag isolates a part of text that might be formatted in a different direction from other text outside it.</li>
-	       		<li></li>
-	       		<li></li>
-	       		<li></li>
-	       		<li></li>
-	       		<li></li>
+	       		<li><b>bdi</b> - bi-directional tag - izoleaza parti din text care sunt in alta limba cu directie de scris diferita.</li>
+	       		<li><b>mark</b> - marcheaza codul sursa definit in interiorul 'code' sau 'pre'.</li>
 	       </ul>
 		</aside>
-
-		<!--
-		, , , , , , data, datalist, details, , figcaption, figure, , , keygen, mark, meter, nav, output, progress, rp, rt, ruby, , source, summary, time, , , wbr
-		-->
 	</section>
+
+	<section>
+		<section>
+			<h2>Tag-uri si atribute</h2>
+			<h6>Noi tipuri de campuri pentru formulare</h6>
+
+		    <p>email, number, search, url, range, date, time, tel, color</p>
+
+		    <p style="margin-top:20px; font-size:80%;">De retinut: Influenteaza comportamentul browserelor de pe dispozitivele mobile.</p>
+		</section>
+
+		<section>
+			<h2>Tag-uri si atribute</h2>
+			<h6 class="em2">&lt;input type="text"&gt;</h6>
+			<img src="imgs/cart/2.PNG" height="500">
+		</section>
+
+		<section>
+			<h2>Tag-uri si atribute</h2>
+			<h6 class="em2">&lt;input type="email"&gt;</h6>
+			<img src="imgs/cart/3.PNG" height="500">
+		</section>
+
+		<section>
+			<h2>Tag-uri si atribute</h2>
+			<h6 class="em2">&lt;input type="number"&gt;</h6>
+			<img src="imgs/cart/5.PNG" height="500">
+		</section>
+
+		<section>
+			<h2>Tag-uri si atribute</h2>
+			<h6 class="em2">&lt;input type="url"&gt;</h6>
+			<!-- @todo: poza -->
+		</section>
+
+		<section>
+			<h2>Tag-uri si atribute</h2>
+			<h6 class="em2">&lt;input type="date"&gt;</h6>
+			<!-- @todo: poza -->
+		</section>
+
+		<section>
+			<h2>Tag-uri si atribute</h2>
+			<h6 class="em2">&lt;input type="time"&gt;</h6>
+			<!-- @todo: poza -->
+		</section>
+
+    </section>
+
+    <section>
+    	<h2>Tag-uri si atribute</h2>
+    	<h6>Atribute noi pentru campuri</h6>
+
+    	<p><a href="http://www.avangate.com/lp/html5-techhub-bucharest-2013.html">placeholder</a>, pattern, required, autofocus, list, min, max, step</p>
+    </section>
 
 
 
