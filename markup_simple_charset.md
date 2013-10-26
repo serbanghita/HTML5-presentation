@@ -1,5 +1,5 @@
-##### HTML markup
-## Simple structure
+###### Tag-uri si atribute
+## Diferente de markup
 
 ```
 <!DOCTYPE html>

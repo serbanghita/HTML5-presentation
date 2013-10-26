@@ -273,8 +273,8 @@
 	</section>
 
 	<section>
-		<h2>Tag-uri si atribute</h2>
-		<h6>Elemente noi</h6>
+		<h6>Tag-uri si atribute</h6>
+		<h2>Elemente noi</h2>
 
 		<p>&lt;article&gt; &lt;aside&gt; &lt;header&gt; &lt;nav&gt; &lt;footer&gt; &lt;section&gt; &lt;main&gt;
 			&lt;summary&gt; <a href="http://jsbin.com/oVesip/2/edit">&lt;details&gt;</a> <a href="http://jsbin.com/EvotEpu/2/edit">&lt;figure&gt;</a> &lt;figcaption&gt; &lt;time&gt; <a href="http://jsbin.com/IhiSEnE/1/edit">&lt;datalist&gt;</a></p>
@@ -292,8 +292,8 @@
 
 	<section>
 		<section>
-			<h2>Tag-uri si atribute</h2>
-			<h6>Noi tipuri de campuri pentru formulare</h6>
+			<h6>Tag-uri si atribute</h6>
+			<h2>Noi tipuri de campuri pentru formulare</h2>
 
 		    <p>email, number, search, url, range, date, time, tel, color</p>
 
@@ -301,56 +301,193 @@
 		</section>
 
 		<section>
-			<h2>Tag-uri si atribute</h2>
-			<h6 class="em2">&lt;input type="text"&gt;</h6>
+			<h6>Tag-uri si atribute</h6>
+			<h2 class="em2">&lt;input type="text"&gt;</h2>
 			<img src="imgs/cart/2.PNG" height="500">
 		</section>
 
 		<section>
-			<h2>Tag-uri si atribute</h2>
-			<h6 class="em2">&lt;input type="email"&gt;</h6>
+			<h6>Tag-uri si atribute</h6>
+			<h2 class="em2">&lt;input type="email"&gt;</h2>
 			<img src="imgs/cart/3.PNG" height="500">
 		</section>
 
 		<section>
-			<h2>Tag-uri si atribute</h2>
-			<h6 class="em2">&lt;input type="number"&gt;</h6>
+			<h6>Tag-uri si atribute</h6>
+			<h2 class="em2">&lt;input type="number"&gt;</h2>
 			<img src="imgs/cart/5.PNG" height="500">
 		</section>
 
 		<section>
-			<h2>Tag-uri si atribute</h2>
-			<h6 class="em2">&lt;input type="url"&gt;</h6>
+			<h6>Tag-uri si atribute</h6>
+			<h2 class="em2">&lt;input type="url"&gt;</h2>
 			<!-- @todo: poza -->
 		</section>
 
 		<section>
-			<h2>Tag-uri si atribute</h2>
-			<h6 class="em2">&lt;input type="date"&gt;</h6>
+			<h6>Tag-uri si atribute</h6>
+			<h2 class="em2">&lt;input type="date"&gt;</h2>
 			<!-- @todo: poza -->
 		</section>
 
 		<section>
-			<h2>Tag-uri si atribute</h2>
-			<h6 class="em2">&lt;input type="time"&gt;</h6>
+			<h6>Tag-uri si atribute</h6>
+			<h2 class="em2">&lt;input type="time"&gt;</h2>
 			<!-- @todo: poza -->
 		</section>
 
     </section>
 
     <section>
-    	<h2>Tag-uri si atribute</h2>
-    	<h6>Atribute noi pentru campuri</h6>
+    	<h6>Tag-uri si atribute</h6>
+    	<h2>Atribute noi pentru campuri</h2>
 
     	<p><a href="http://www.avangate.com/lp/html5-techhub-bucharest-2013.html">placeholder</a>, pattern, required, autofocus, list, min, max, step</p>
     </section>
 
+    <section>
+    	<h6>Tag-uri si atribute</h6>
+    	<h2>Atribute noi pentru elemente</h2>
+
+    	<ul style="margin-top:20px; font-size:80%;">
+		    <li class="fragment">Atributul <span class="em2">type=""</span> este optional pentru <span class="em2">&lt;script&gt;</span> si <span class="em2">&lt;style&gt;</span></li>
+		    <li class="fragment"><span class="em2">&lt;meta charset="..."&gt;</span>
+		    <li class="fragment"><span class="em2">&lt;script async src="..."&gt;</span>
+		    <li class="fragment">Atributele <span class="em2">data-*</span> pot sa contina orice fel de date. <br>Ex: &lt;span <span class="em2">data-userid="1234"</span>&gt;Nume&lt;/span&gt; <span class="em2">elem.dataset.userid</span>
+		    <li class="fragment"><span class="em2"><a href="http://www.avangate.com/lp/html5-techhub-bucharest-2013.html">elem.contenteditable</a></span> si <span class="em2">document.designMode</span></li>
+	    </ul>
+    </section>
+
+    <!-- Subcapitol -->
+    <section>
+
+    	<section>
+	    	<h6>Tag-uri si atribute</h6>
+	    	<h2>Diferente de markup</h2>
+
+	    	<p style="margin-top:20px; font-size:80%;">Urmeaza exemple de cod HTML5.</p>
+	    </section>
+
+		<section data-markdown="markup_doctype.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
+			<aside class="notes">
+				<ol>
+				 	<li>DOCTYPE is case insensitive</li>
+				 	<li>DOCTYPE is easy to remember</li>
+				</ol>
+			</aside>
+		</section>
+
+		<section data-markdown="markup_simple.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
+			<aside class="notes">
+			 <ol>
+			 	<li>meta charset is missing</li>
+			 	<li>Even without DOCTYPE or old DOCTYPE, Chrome, Opera, Firefox interpret new HTML5 attributes</li>
+			 <ol>
+			</aside>
+		</section>
+
+		<section data-transition="fade" data-markdown="markup_simple_charset.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+		<section data-markdown="viewport.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+		<section data-markdown="new_tags.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
+			<aside class="notes">
+				 <ol>
+				 	<li>'article' can be nested. Nested articles are like a blog posts with comments.</li>
+				 	<li>'article' is similar with 'entry' or 'item' from XML feeds.</li>
+				 	<li>'article' can have a 'header' and footer' or multiple 'sections'.</li>
+				 	<li>'section' is for thematic grouping of elements.</li>
+				 	<li>don't use 'section' for styling, use 'div' and 'span' instead</li>
+				 	<li>use 'nav' only for major link navigation.</li>
+				 	<li>don't use 'nav' for the links in the 'footer'. 'footer' is sufficient.</li>
+				 <ol>
+			</aside>
+		</section>
+
+		<section data-markdown="new_tags_example_simple.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+		<section data-markdown="new_tags_example_full.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+		<section>
+	    	<h6>Tag-uri si atribute</h6>
+	    	<h2>Combatibilitate tag-uri noi HTML5</h2>
+
+			<img src="imgs/new_tags_compatibility.png" />
+
+			<table style="margin:0 auto;">
+				<tr>
+					<td style="text-align:center;"><img src="imgs/chrome.png" width="100" /></td>
+					<td style="text-align:center;"><img src="imgs/firefox.png" width="100" /></td>
+					<td style="text-align:center;"><img src="imgs/opera.png" width="100" /></td>
+					<td style="text-align:center;"><img src="imgs/ie.png" width="100" /></td>
+					<td style="text-align:center;"><img src="imgs/safari.png" width="100" /></td>
+				</tr>
+				<tr>
+					<td style="text-align:center;"></td>
+					<td style="text-align:center;"></td>
+					<td style="text-align:center;"></td>
+					<td style="text-align:center;">~9</td>
+					<td style="text-align:center;"></td>
+				</tr>
+			</table>
+
+		</section>
+
+		<section data-markdown="new_tags_compatibility.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+    </section>
+
+    <section>
+
+    	<section>
+			<h2>Tag-uri si atribute</h2>
+			<h6>Microdata</h6>
+
+			<ul>
+				<li class="fragment">Ce este <span class="em2">microdata</span>?</li>
+				<li class="fragment">Cum se aplica pe Internet</li>
+				<li class="fragment">Exemplu live</li>
+			</ul>
+
+    	</section>
+
+		<section>
+			<h2>Tag-uri si atribute</h2>
+			<h6>Microdata</h6>
+
+			<p>Este un set de <span class="em2">atribute HTML</span> ce se aplica peste elementele HTML existente in pagina pentru
+				a da textului un inteles semantic specific. (ex. eveniment, review, produs, etc)</p>
+			<p>Este folosit de motoarele de cautare in afisarea rezultatelor dar si de parserele
+				diverselor servicii social media.</p>
+			<p style="margin-top:20px; font-size:80%;">Exista 3 scheme microdata, insa cel mai popular este <span class="em2">schema.org</span>.</p>
 
 
+		</section>
 
+		<section data-markdown="microdata.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
 
+		<section>
+			<h2>Tag-uri si atribute</h2>
+			<h6>Microdata</h6>
 
+			<p>Cum este aplicat la Google</p>
 
+			<ul>
+				<li class="fragment">Article</li>
+				<li class="fragment">Book Reviews</li>
+				<li class="fragment">Events</li>
+				<li class="fragment">Local Businesses</li>
+				<li class="fragment">Movies</li>
+				<li class="fragment">Products</li>
+				<li class="fragment">Restaurants</li>
+				<li class="fragment"><span class="em2">Software Applications</span></li>
+				<li class="fragment">TV Episodes</li>
+			</ul>
+
+			<img src="imgs/microdata-cuttherope.png"  class="fragment" />
+
+		</section>
+    </section>
 
 
 
@@ -374,126 +511,17 @@
 		<!-- explicatie sumar/structura prezentare/pauze -->
 	<section>
 
-	<section>
-		<h2>Notable markup differences</h2>
-		<p>New form controls: <span class="em2">email</span>, <span class="em2">number</span>, <span class="em2">search</span>, <span class="em2">url</span>, <span class="em2">range</span>, <span class="em2">date</span>, <span class="em2">time</span>,  <span class="em2">tel</span>, <span class="em2">color</span></p>
-	</section>
 
-	<section>
-		<h2>Notable markup differences</h2>
-		<p>New form control attributes: <span class="em2">placeholder</span>, <span class="em2">pattern</span>, <span class="em2">required</span>, <span class="em2">list</span>, <span class="em2">min</span>, <span class="em2">max</span>, <span class="em2">step</span>, etc.</p>
-	</section>
 
-	<section>
-		<h2>Notable markup differences</h2>
-		<p>New attributes: <span class="em2">charset</span> (on <span class="em2">meta</span>), <span class="em2">async</span> (on <span class="em2">script</span>)</p>
-	</section>
 
-	<section>
-		<h2>Notable markup differences</h2>
-		<p>Custom attributes: <span class="em2">data-*</span>. Set: <span class="em2">data-userid="1234"</span> Get: <span class="em2">elem.dataset.userid</span></p>
-	</section>
 
-	<section>
-		<h2 class="em2">HTML markup</h2>
-	</section>
 
-	<section data-markdown="markup_doctype.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
-		<aside class="notes">
-			<ol>
-			 	<li>DOCTYPE is case insensitive</li>
-			 	<li>DOCTYPE is easy to remember</li>
-			</ol>
-		</aside>
-	</section>
 
-	<section data-markdown="markup_simple.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
-		<aside class="notes">
-		 <ol>
-		 	<li>meta charset is missing</li>
-		 	<li>Even without DOCTYPE or old DOCTYPE, Chrome, Opera, Firefox interpret new HTML5 attributes</li>
-		 <ol>
-		</aside>
-	</section>
-
-	<section data-transition="fade" data-markdown="markup_simple_charset.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
-
-	<section data-markdown="viewport.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
 	<!-- poze cu deviceuri -->
 
-	<section data-markdown="new_tags.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
-		<aside class="notes">
-		 <ol>
-		 	<li>'article' can be nested. Nested articles are like a blog posts with comments.</li>
-		 	<li>'article' is similar with 'entry' or 'item' from XML feeds.</li>
-		 	<li>'article' can have a 'header' and footer' or multiple 'sections'.</li>
-		 	<li>'section' is for thematic grouping of elements.</li>
-		 	<li>don't use 'section' for styling, use 'div' and 'span' instead</li>
-		 	<li>use 'nav' only for major link navigation.</li>
-		 	<li>don't use 'nav' for the links in the 'footer'. 'footer' is sufficient.</li>
-		 <ol>
-		</aside>
-	</section>
 
-	<section data-markdown="new_tags_example_simple.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
 
-	<section data-markdown="new_tags_example_full.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
 
-	<section>
-		<h6>HTML Markup</h6>
-		<h2>New tags compatibility</h2>
-
-		<img src="imgs/new_tags_compatibility.png" />
-
-		<table style="margin:0 auto;">
-			<tr>
-				<td style="text-align:center;"><img src="imgs/chrome.png" width="100" /></td>
-				<td style="text-align:center;"><img src="imgs/firefox.png" width="100" /></td>
-				<td style="text-align:center;"><img src="imgs/opera.png" width="100" /></td>
-				<td style="text-align:center;"><img src="imgs/ie.png" width="100" /></td>
-				<td style="text-align:center;"><img src="imgs/safari.png" width="100" /></td>
-			</tr>
-			<tr>
-				<td style="text-align:center;">28</td>
-				<td style="text-align:center;">23</td>
-				<td style="text-align:center;">17</td>
-				<td style="text-align:center;">9</td>
-				<td style="text-align:center;">5.1</td>
-			</tr>
-		</table>
-
-	</section>
-
-	<section>
-		<h6>HTML Markup</h6>
-		<h2>New tags compatibility.</h2>
-
-		<div> What about <span class="em2">legacy browsers</span>?</div>
-	</section>
-
-	<section data-markdown="new_tags_compatibility.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
-
-	<section>
-		<h6>HTML Markup</h6>
-		<h2>Microdata</h2>
-
-		<ul>
-			<li class="fragment">Article</li>
-			<li class="fragment">Book Reviews</li>
-			<li class="fragment">Events</li>
-			<li class="fragment">Local Businesses</li>
-			<li class="fragment">Movies</li>
-			<li class="fragment">Products</li>
-			<li class="fragment">Restaurants</li>
-			<li class="fragment"><span class="em2">Software Applications</span></li>
-			<li class="fragment">TV Episodes</li>
-		</ul>
-
-		<img src="imgs/microdata-cuttherope.png"  class="fragment" />
-
-	</section>
-
-	<section data-markdown="microdata.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
 
 	<section>
 		<h2 class="em2">Notable APIs</h2>

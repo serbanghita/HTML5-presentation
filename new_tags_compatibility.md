@@ -1,10 +1,5 @@
-##### HTML Markup
-## Use polyfills
-
-> In web development, a polyfill (or polyfiller) is downloadable code
-which provides facilities that __are not__ built-in to a web browser.
-
-
+###### Tag-uri si atribute
+## Polyfill
 
 ```
 <!--[if lte IE 8]>
@@ -20,4 +15,4 @@ which provides facilities that __are not__ built-in to a web browser.
 <![endif]-->
 ```
 
-Full list at [Modernizr Wiki](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills).
+<p style="margin-top:20px; font-size:80%;">[Exemplu pagina HTML5](test_doctype.html)</p>

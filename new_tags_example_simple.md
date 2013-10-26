@@ -1,5 +1,5 @@
-##### HTML markup
-## New tags (simple example)
+###### Tag-uri si atribute
+## Diferente de markup
 
 ```
 <body>

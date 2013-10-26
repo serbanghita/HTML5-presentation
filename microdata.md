@@ -1,9 +1,8 @@
-##### HTML Markup
+##### Tag-uri si atribute
 ## Microdata
 
-> schema.org is a collaboration by Google, Microsoft, and Yahoo! to improve the web by creating a
-common vocabulary for describing the data on the web. If you add schema.org markup to your HTML pages,
-many companies and products—including Google search—will understand the data on your site.
+<p><span class="em2">schema.org</span> reprezinta o colaborare dintre Google, Microsoft, and Yahoo! prin care se
+urmareste crearea unui vocabular comun pentru descrierea datelor dintr-o pagina web.</p>
 
 ```
 <div class="prezentare">
@@ -17,4 +16,5 @@ many companies and products—including Google search—will understand the data
         </p>
 ```
 
-[Google Structured Data Testing Tool](http://www.google.com/webmasters/tools/richsnippets) / [Example link](http://www.avangate.com/newsletter/html5-newsletter-test.html)
+<p style="margin-top:20px; font-size:80%;">Testare microdata: [Google Structured Data Testing Tool](http://www.google.com/webmasters/tools/richsnippets)</p>
+<p style="font-size:80%;">Exemplu: [Implementare microdata](http://www.avangate.com/newsletter/html5-newsletter-test.html)</p>

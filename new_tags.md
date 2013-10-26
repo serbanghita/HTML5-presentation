@@ -1,27 +1,28 @@
-##### HTML markup
-## New tags
+###### Tag-uri si atribute
+## Diferente de markup
 
 ```
-<!-- Header of a page, section, article etc. -->
+<!-- Header-ul unei sectiuni de tip 'page', 'section', 'article' etc. -->
 <header>
 
-<!-- The main navigation of the website. Contained by the header. -->
+<!-- Meniul principal de navigare prin site.
+De obicei continut de 'header'. -->
 <nav>
 
-<!-- Where all the page content goes. -->
+<!-- Continutul principal al paginii. -->
 <main>
 
-<!-- Generic structure. Various content. -->
+<!-- Delimiteaza un continut generic. -->
 <section>
 
-<!-- Contains article, blog post, news or a similar structure. -->
-<!-- Parsers and search engines will use this
-    independently from your website content -->
+<!-- Contine un articol, blog post, stire, comentarii. -->
+<!-- Motoarele de cautare si parserele vor folosi
+continutul din interior independent de restul site-ului. -->
 <article>
 
-<!-- Structure related to the nearest content. -->
+<!-- Structura ce are legatura cu tot ce se afla in vecinatatea ei. -->
 <aside>
 
-<!-- Footer of page, section, article etc. -->
+<!-- Footer-ul unei sectiuni de tip 'page', 'section', 'article' etc. -->
 <footer>
 ```
