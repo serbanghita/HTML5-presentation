@@ -3,11 +3,8 @@
 
 	<head>
 		<meta charset="utf-8">
-
 		<title>HTML5 - From performant websites to multiplayer web based games | Avangate Tech Sessions</title>
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 	    <link rel="stylesheet" href="css/reveal.css">
 	    <link rel="stylesheet" href="css/theme/default.css" id="theme">
 	    <!-- For syntax highlighting -->
@@ -17,6 +14,9 @@
 		<style type="text/css">
 			.reveal section img { border:none; box-shadow:none; background:none; }
 			.em2 { color:#ED9D13 !important; }
+			 html.white .state-background {
+				background-color: rgba(0,0,0, 0.8);
+			  }
 		</style>
 	</head>
 
@@ -40,6 +40,19 @@
 		<img width="400" src="imgs/serban_ghita.jpg" style="float:left;border-radius: 20px;box-shadow: 4px 4px 4px #3b759e; margin-left: 50px;" border="0">
 	</section>
 
+	<section>
+		<!-- slide cu cpanel, cart, github -->
+		<!-- slide 'Sa ne cunoastem' -->
+		<!-- Slide 'Cati dintre voi au folosit pana acum HTML5 in productie?' -->
+		<!-- Slide 'Cati dintre voi au dezvoltat aplicatii web de tip single-page?' -->
+		<!-- Slide 'Cati dintre voi au dezvoltat jocuri pe web (Flash, HTML5)' -->
+		<!-- HTML5 cool & new parts; not so cool parts -->
+	<section>
+
+	<section>
+		<!-- explicatie sumar/structura prezentare/pauze -->
+	</section>
+
 	<section data-transition="fade">
 
 		<h2>What is HTML5?</h2>
@@ -53,7 +66,7 @@
 		</ol>
 	</section>
 
-	<section>
+	<section data-state="mint">
 		<h2>What is HTML5?</h2>
 
 		<table>
@@ -73,24 +86,90 @@
 		<h2>New features</h2>
 	</section>
 
-	<section>
+	<section data-state="whiteout">
 		<div style="background:white;border-radius:50%; border:5px solid #ddd;"><img src="imgs/HTML5-APIs-and-related-technologies-by-Sergey-Mavrody.png" /></div>
 		<div><small>Credits: Sergey Mavrody</small></div>
 	</section>
 
 	<section>
 		<h2>Notable markup differences</h2>
-
-		<ol>
-			<li class="fragment">New parsing rules for browsers. Both <span class="em2">&lt;img src="test.jpg" /&gt;</span> and <span class="em2">&lt;img src="test.jpg"&gt;</span> accepted.</li>
-			<li class="fragment">New tags: <span class="em2">&lt;article&gt;</span> ... <span class="em2">&lt;video&gt;</span>, <span class="em2">&lt;track&gt;</span>, <span class="em2">&lt;audio&gt;</span> ... <span class="em2">&lt;canvas&gt;</span> ...</li>
-			<li class="fragment">New form controls: <span class="em2">email</span>, <span class="em2">number</span>, <span class="em2">search</span>, <span class="em2">url</span>, <span class="em2">range</span>, <span class="em2">date</span>, <span class="em2">time</span>,  <span class="em2">tel</span>, <span class="em2">color</span></li>
-			<li class="fragment">New form control attributes: <span class="em2">placeholder</span>, <span class="em2">pattern</span>, <span class="em2">required</span>, <span class="em2">list</span>, <span class="em2">min</span>, <span class="em2">max</span>, <span class="em2">step</span>, etc.</li>
-			<li class="fragment">New attributes: <span class="em2">charset</span> (on <span class="em2">meta</span>), <span class="em2">async</span> (on <span class="em2">script</span>)</li>
-			<li class="fragment">Custom attributes: <span class="em2">data-*</span>. Set: <span class="em2">data-userid="1234"</span> Get: <span class="em2">elem.dataset.userid</span></li>
-		</ol>
-
+		<p>New and relaxed parsing rules for browsers. 
+			<br>Both <span class="em2">&lt;img src="test.jpg" /&gt;</span> and <span class="em2">&lt;img src="test.jpg"&gt;</span> accepted.</p>
 	</section>
+
+	<section>
+		<h2>Notable markup differences</h2>
+		<p>New tags</p>	
+		<table style="margin:10px auto 0;">
+			<tr>
+				<td class="em2">&lt;article&gt;</td>
+				<td class="em2">&lt;aside&gt;</td>
+				<td class="em2">&lt;header&gt;</td>
+				<td class="em2">&lt;footer&gt;</td>
+				<td class="em2">&lt;section&gt;</td>
+				<td class="em2">&lt;main&gt;</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="em2">&lt;canvas&gt;</td>
+				<td class="em2">&lt;audio&gt;</td>
+				<td class="em2">&lt;track&gt;</td>
+				<td class="em2">&lt;video&gt;</td>
+				<td class="em2">&lt;embed&gt;</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>bdi</td>
+				<td>command</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>									
+		</table>
+
+		<aside class="notes">
+	       <ul>
+	       		<li>bdi - bi-directional tag isolates a part of text that might be formatted in a different direction from other text outside it.</li>
+	       		<li></li>
+	       		<li></li>
+	       		<li></li>
+	       		<li></li>
+	       		<li></li>
+	       </ul>
+		</aside>		
+
+		<!--
+		, , , , , , data, datalist, details, , figcaption, figure, , , keygen, mark, meter, nav, output, progress, rp, rt, ruby, , source, summary, time, , , wbr		
+		-->	
+	</section>
+
+	<section>
+		<h2>Notable markup differences</h2>
+		<p>New form controls: <span class="em2">email</span>, <span class="em2">number</span>, <span class="em2">search</span>, <span class="em2">url</span>, <span class="em2">range</span>, <span class="em2">date</span>, <span class="em2">time</span>,  <span class="em2">tel</span>, <span class="em2">color</span></p>						
+	</section>
+
+	<section>
+		<h2>Notable markup differences</h2>
+		<p>New form control attributes: <span class="em2">placeholder</span>, <span class="em2">pattern</span>, <span class="em2">required</span>, <span class="em2">list</span>, <span class="em2">min</span>, <span class="em2">max</span>, <span class="em2">step</span>, etc.</p>						
+	</section>
+
+	<section>
+		<h2>Notable markup differences</h2>
+		<p>New attributes: <span class="em2">charset</span> (on <span class="em2">meta</span>), <span class="em2">async</span> (on <span class="em2">script</span>)</p>			
+	</section>		
+
+	<section>
+		<h2>Notable markup differences</h2>
+		<p>Custom attributes: <span class="em2">data-*</span>. Set: <span class="em2">data-userid="1234"</span> Get: <span class="em2">elem.dataset.userid</span></p>
+	</section>	
 
 	<section>
 		<h2 class="em2">HTML markup</h2>
@@ -114,8 +193,10 @@
 		</aside>
 	</section>
 
-
 	<section data-transition="fade" data-markdown="markup_simple_charset.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
+	<section data-markdown="viewport.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+	<!-- poze cu deviceuri -->
 
 	<section data-markdown="new_tags.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8">
 		<aside class="notes">
@@ -306,7 +387,10 @@
 
 		<img src="imgs/av_visitor/entrance.jpg" style="border:2px solid white;" />
 		<!-- @todo: gasit poza -->
+		<!-- descriere -->
+		<!-- obiective mele -->		
 		<!-- explicat diferenta intre GPU si CPU -->
+
 
 
 

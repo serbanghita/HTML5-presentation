@@ -1,0 +1,22 @@
+* Prima pagina (logo HTML5, screenshot single page app, screenshot game)
+* Despre mine (poza, nume, link site personal, link github, 5 ani in Avangate, 11 ani profesionist)
+  * Poza Stonet la inceput
+  * Poza Verasys (antreprenor)
+  * Poza Avangate acum
+    * 2 ani lucrat la CMS www.avangate.com
+	* 3 ani lucrat la Avangate Cpanel (poza) si Avangate Shopping Cart (poza)
+  * Date personale (poza bebe, pasiuni personale, fun facts str. Serban Ghita)
+* Sa ne cunoastem (3 intrebari)
+* Sumar prezentare
+  * Ce este HTML5
+  * Care sunt noile facilitati (markup & APIs)
+  * Parti bune, care sunt provocarile
+  * Impactul asupra dispozitivelor clasice si mobile
+  * Studii de caz
+  * Exemple concrete folosite de mine
+* Ce este HTML5
+  * upgrade de la HTML 4.01 si XHTML 1.1
+  * tag-uri si atribute noi
+  * API-uri noi (JavaScript marea majoritate)
+  * o abordare diferita in constructia paginilor web
+  * renuntare totala la librarii 3rd party (Flash, Java applets, Silverlight, etc)
