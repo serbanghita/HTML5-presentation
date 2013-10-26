@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script>
+	// Error logger.
+	var logger = function(tx, error){ console.log(error); }
+	// Init the db.
+	var db = openDatabase('mydb', '1.0', 'Serban Ghita database', 1024);
+
+	db.transaction(function (tx) {
+	 // Create table.
+	 tx.executeSql('CREATE TABLE IF NOT EXISTS users (id integer primary key, name text, email text);', null, null, logger);
+	 // Delete.
+	 tx.executeSql('DELETE FROM users;', null, null, logger);
+	 // Insert data.
+	 tx.executeSql('INSERT INTO users (id, name, email) VALUES (1, "Serban", "sg@avangate.com");', null, null, logger);
+	 tx.executeSql('INSERT INTO users (id, name, email) VALUES (2, "Ghita", "test@avangate.com");', null, null, logger);
+	 // Select data.
+	  tx.executeSql('SELECT * FROM users', [], function (tx, results) {
+		var len = results.rows.length, i;
+		for (i = 0; i < len; i++) {
+		console.log(results.rows.item(i).name, results.rows.item(i).email);
+	  }
+	 });
+	});
+	</script>
+</head>
+<body></body>
+</html>
