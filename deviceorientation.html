@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Testing Sheet by Şerban Ghiţă | Avangate Tech Sessions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+        	body { font-family: Arial, serif; font-size:60px; }
+        </style>
+        <script>
+	        var createResult = function( resultType, resultData ){
+
+	        	var result = document.querySelector('#results .'+ resultType);
+
+	        	if( !result ){
+		        	var tmpElem = document.createElement('div');
+		        	tmpElem.className = resultType;
+		        	tmpElem.innerHTML = '<b>' + resultType + ':</b> ' + resultData;
+		        	results.appendChild(tmpElem);
+
+		        	return true;
+	        	}
+
+	        	result.innerHTML = '<b>' + resultType + ':</b> ' + resultData;
+
+
+	        }
+	        var loadPage = function(){
+
+	        	var results = document.getElementById('results');
+
+				window.addEventListener('deviceorientation', function(e) {
+					createResult( 'deviceorientation', (e.alpha | 0 || 0) + ', ' + (e.beta | 0 || 0) + ', ' + (e.gamma | 0 || 0) );
+				  	console.log('deviceorientation', e.alpha, e.beta, e.gamma);
+				}, false);
+
+				window.addEventListener('devicemotion', function(e){
+					createResult( 'devicemotion', (e.acceleration.x | 0) + ', ' + (e.acceleration.y | 0) + ', ' + (e.accelerationIncludingGravity.x | 0) + ', ' + (e.accelerationIncludingGravity.y | 0) );
+					console.log('devicemotion', e.acceleration, e.accelerationIncludingGravity);
+				}, false);
+
+				window.addEventListener('orientationchange', function(e) {
+					createResult('orientationchange', window.orientation);
+					console.log('orientationchange', window.orientation, e);
+				}, false);
+
+				window.addEventListener("resize", function() {
+					createResult('resize', window.outerWidth + ', ' + window.outerHeight);
+					console.log('resize: ', window.outerWidth, window.outerHeight);
+				}, false);
+	        }
+
+	        window.addEventListener('load', loadPage, false);
+        </script>
+	</head>
+	<body>
+		<div id="results"></div>
+	</body>
+</html>
