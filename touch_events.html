@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Testing Sheet by Şerban Ghiţă | Avangate Tech Sessions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+        	body { font-family: Arial, serif; font-size:60px; }
+        	#myPage { border:2px solid black; width:320px; height:150px; border-radius: 12px; }
+        </style>
+        <script>
+	        var createResult = function( resultType, resultData ){
+
+	        	//console.log(resultType, resultData);
+
+	        	var result = document.querySelector('#results .'+ resultType);
+	        	var resultString = '';
+
+	        	var touches = resultData.changedTouches.length ? resultData.changedTouches : resultData.touches;
+	        	if(!touches.length){ return false; }
+
+	        	for (var i=0; i < touches.length; i++) { // touches
+	        		resultString += 'x: '+ touches[i].clientX + ' y: '+ touches[i].clientY + '; ';
+	        	}
+
+	        	if( !result ){
+		        	var tmpElem = document.createElement('div');
+		        	tmpElem.className = resultType;
+		        	tmpElem.innerHTML = '<b>' + resultType + ':</b> ' + resultString;
+		        	results.appendChild(tmpElem);
+
+		        	return true;
+	        	}
+
+	        	result.innerHTML = '<b>' + resultType + ':</b> ' + resultString;
+
+
+	        }
+
+	        var loadPage = function(){
+				 var elem = document.getElementById('myPage');
+				elem.addEventListener("touchstart", function(e){
+					e.preventDefault();
+					createResult('touchstart', e);
+				}, false);
+				elem.addEventListener("touchend", function(e){
+					e.preventDefault();
+					createResult('touchend', e);
+				}, false);
+				elem.addEventListener("touchcancel", function(e){
+					e.preventDefault();
+					createResult('touchcancel', e);
+				}, false);
+				elem.addEventListener("touchleave", function(e){
+					e.preventDefault();
+					createResult('touchleave', e);
+				}, false);
+				elem.addEventListener("touchmove", function(e){
+					e.preventDefault();
+					createResult('touchmove', e);
+				}, false);
+	        }
+
+	        window.addEventListener('load', loadPage, false);
+        </script>
+    </head>
+    <body>
+
+    	<div id="myPage">
+    	</div>
+
+    	<div id="results">
+    	</div>
+
+    </body>
+</html>
+
+

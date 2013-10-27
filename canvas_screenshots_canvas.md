@@ -1,12 +1,11 @@
-##### Notable APIs
-## Canvas
+##### API<small>uri</small>
+## Canvas 2D
 
-__Taking canvas screenshots & saving them__
+Cum sa faci capturi ale ecranului si sa le salvezi.
 
 ```
 var imgString = canvas.toDataURL();
 $.post("http://test.com/save/screenshot", {data: imgString});
 ```
 
-<p style="font-size:0.7em;">[Demo](test_screenshot_canvas.html)</p>
-<p style="font-size:0.7em;">[Simple example](http://www.rgraph.net/blog/2013/april/an-example-of-the-html5-canvas-todataurl-function.html)</p>
+<p style="font-size:80%; margin-top:20px;">Demo: [local](test_screenshot_canvas.html), [remote](http://www.rgraph.net/blog/2013/april/an-example-of-the-html5-canvas-todataurl-function.html)</p>
