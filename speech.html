@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Speech Test</title>
+	<style>
+		#searchField { font-size:20px; padding:5px 10px; }
+		#iframe { border:1px dotted #ccc; width:800px; height:600px; }
+	</style>
+	<script>
+
+	var bindSpeech = function(){
+		console.log('Speech done: ', this.value);
+		var tmp = document.createElement('p');
+		tmp.innerHTML = this.value;
+		document.getElementById('searches').appendChild(tmp);
+	}
+
+	var loadSpeech = function(){
+
+
+		var searchField = document.getElementById('searchField');
+		searchField.webkitSpeech = true;
+		searchField.addEventListener('speechchange', bindSpeech, false);
+		searchField.addEventListener('webkitspeechchange', bindSpeech, false);
+
+		console.log('Bind done.');
+
+	}
+
+	window.addEventListener('load', loadSpeech, false);
+	</script>
+</head>
+<body>
+
+		<input type="text" x-webkit-speech id="searchField" autofocus autocomplete="off" />
+
+		<br>
+
+		<div id="searches"></div>
+
+</body>
+</html>

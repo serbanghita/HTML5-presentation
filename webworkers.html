@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script>
+		/*
+		var data = [];
+		for (var i=0; i<1500; i++) {
+			data[i] = [];
+			for (var j=0; j<1500; j++) {
+				data[i][j] = Math.random();
+			}
+		}
+		console.log(data);
+		*/
+	</script>
+	<script>
+		var worker = new Worker("task.js");
+		// Bind the event.
+		worker.onmessage = function(e) {
+			console.log("Finished loading data.", e.data);
+		};
+		// Start the job.
+		worker.postMessage();
+	</script>
+</head>
+<body>
+	<p>Test WebWorkers</p>
+</body>
+</html>
