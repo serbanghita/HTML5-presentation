@@ -2,7 +2,7 @@
 ## Websockets
 
 <p>Modalitate de a creea comunicatii persistente, in ambele sensuri intre aplicatia web si server.</p>
-<p style="margin-top:20px; font-size:80%;">Trebuie un server ce foloseste protocolul <span class="em2">ws://</span>. Ex. node.js</p>
+<p style="margin-top:20px; font-size:80%;">Trebuie un server ce foloseste protocolul <span class="em2">ws://</span>. Ex.: <a href="http://nodejs.org/">node.js</a></p>
 
 ```
 var conn = new WebSocket("ws://server.com/chat");
