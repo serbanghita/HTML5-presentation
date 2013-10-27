@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<script>
-		/*
+
 		var data = [];
 		for (var i=0; i<1500; i++) {
 			data[i] = [];
@@ -12,9 +12,10 @@
 			}
 		}
 		console.log(data);
-		*/
+
 	</script>
 	<script>
+	/*
 		var worker = new Worker("task.js");
 		// Bind the event.
 		worker.onmessage = function(e) {
@@ -22,9 +23,13 @@
 		};
 		// Start the job.
 		worker.postMessage();
+		*/
 	</script>
 </head>
 <body>
-	<p>Test WebWorkers</p>
+	<p>Test WebWorkers </p>
+	<script>
+		Math.random();
+	</script>
 </body>
 </html>

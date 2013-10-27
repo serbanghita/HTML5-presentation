@@ -12,3 +12,4 @@
 <p style="margin-top:20px; font-size:80%;">Folositi servicii externe de upload ca YouTube, SoundCloud, etc.</p>
 <p style="font-size:80%;">Recomandare: <a href="http://www.videojs.com/">VideoJS</a></p>
 <p style="font-size:80%;">Demo: cum sa <a href="video_audio.html">modificam</a> elementele native din <span class="em2">&lt;audio&gt;</span> si <span class="em2">&lt;video&gt;</span>.</p>
+<p style="font-size:80%;">Demo <a href="http://webaudiodemos.appspot.com/pitchdetect/index.html">remote</a></p>
