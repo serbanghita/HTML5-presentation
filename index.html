@@ -13,6 +13,22 @@
 		<style type="text/css">
 			.reveal section img { border:none; box-shadow:none; background:none; }
 			.em2 { color:#ED9D13 !important; }
+
+			#sticky-footer {
+				display: block;
+				position: absolute;
+				bottom: 10px;
+				left: 50%;
+				margin-left: -93px;
+				z-index: 20;
+			}
+			#sticky-footer div { border-radius:5px; background:white; box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.2); padding:2px 5px; }
+			#sticky-footer span {
+				font-family: Verdana, serif;
+				font-size:10px;
+				color:black;
+			}
+			#sticky-footer img {  }
 		</style>
 	</head>
 
@@ -46,6 +62,12 @@
 	<section>
 		<h2>Despre mine</h2>
 		<img src="imgs/serban_ghita_2012.jpg"  />
+	</section>
+
+	<section>
+		<h2>Despre mine</h2>
+
+		<img src="imgs/serban_guitar.png" height="500" />
 	</section>
 
 	<section>
@@ -92,53 +114,56 @@
 	</section>
 
 	<section>
-		<h2>Avangate Cpanel</h2>
-		<img src="imgs/Avangate Control Panel - Front Page.png">
+		<h6>Despre mine</h6>
+		<h2>Avangate Control Panel</h2>
+		<img src="imgs/Avangate Control Panel - Front Page.png" height="500">
 	</section>
 
 	<section>
-		<h2>Avangate Cpanel</h2>
-		<img src="imgs/Avangate Control Panel - Mobile Editor.png">
-	</section>
-
-	<section>
+		<h6>Despre mine</h6>
 		<h2>Avangate Shopping Cart</h2>
-		<img src="imgs/Avangate Control Panel - Shopping Cart.png"> <!-- @todo: update the picture -->
+		<img src="imgs/Avangate Shopping Cart Mobile.png" height="500">
 	</section>
 
 	<section>
-			<h2>Serban Ghita</h2>
-			<p>Senior Software Engineer</p>
+		<h6>Despre mine</h6>
+		<h2>Avangate Shopping Cart</h2>
+		<img src="imgs/Avangate Shopping Cart Classic.png" height="500">
+	</section>
 
-			<p style="margin-top:20px; font-size:80%;">Proiecte <span class="em2">open-source</span>: <a href="https://github.com/serbanghita">https://github.com/serbanghita</a></p>
+	<section>
+		<h6>Despre mine</h6>
+		<h2>Open-source</h2>
 
-			<img src="imgs/mobile_detect_net.png">
-
+		<img src="imgs/mobile_detect_net.png">
+		<p><a href="https://github.com/serbanghita">https://github.com/serbanghita</a></p>
 	</section>
 
 
-	<section>
+	<section data-background="imgs/raising_hands.png" data-background-size="500px" data-background-position="bottom">
 		<h2>Sa ne cunoastem</h2>
 
 		<ul style="margin-top:20px; font-size:80%;">
-			<li class="fragment">Cati dintre voi au folosit pana acum <span class="em2">HTML5</span> in productie?</li>
+			<li class="fragment">Cati dintre voi au folosit <span class="em2">elemente sau atribute HTML5</span>?</li>
+			<li class="fragment">Cati dintre voi folositi <span class="em2">JavaScript</span> sau <span class="em2">librarii JavaScript</span>?</li>
 			<li class="fragment">Cati dintre voi au dezvoltat aplicatii web de tip <span class="em2">single-page</span>?</li>
-			<li class="fragment">Cati dintre voi au dezvoltat <span class="em2">jocuri web</span> (Flash, HTML5)?</li>
 		</ul>
 	</section>
 
 	<section>
-		<h2>Sumar prezentare</h2>
+		<h2>Agenda prezentare</h2>
 
 		<ul style="margin-top:20px; font-size:80%;">
-			<li class="fragment">Termeni noi utilizati in prezentare</li>
-			<li class="fragment">Ce este <span class="em2">HTML5</span></li>
-			<li class="fragment">Care sunt noile facilitati (<span class="em2">markup</span> &amp; <span class="em2">APIs</span>)</li>
-			<li class="fragment">Parti bune, care sunt provocarile</li>
-			<li class="fragment">Impactul asupra dispozitivelor clasice si mobile</li>
-			<li class="fragment"><span class="em2">Pauza</span></li>
-			<li class="fragment">Studii de caz si exemple</li>
+			<li class="fragment">Termeni noi utilizati in prezentare – <span class="em2">10 min</span></li>
+			<li class="fragment">Ce este HTML5 – <span class="em2">1 min</span></li>
+			<li class="fragment">Care sunt noile elemente si atribute (exemple) – <span class="em2">30 min</span></li>
+			<li class="fragment"><b>Pauza intrebari</b> – <span class="em2">15 min</span></li>
+			<li class="fragment">Care sunt noile API-uri (exemple) – <span class="em2">50 min</span></li>
+			<li class="fragment"><b>Pauza intrebari</b> – <span class="em2">15 min</span></li>
+			<li class="fragment"><b>Pauza cafea</b> – <span class="em2">20 min</span></li>
+			<li class="fragment">Studii de caz – <span class="em2">30 min</span></li>
 		</ul>
+
 	</section>
 
 	<section>
@@ -490,6 +515,12 @@
     </section>
 
     <section>
+    	<h1>Intrebari</h1>
+
+    	<small>Urmeaza API-uri HTML5</small>
+    </section>
+
+    <section>
     	<h2>API<small>uri</small></h2>
     	<h6 class="fragment">Sumar</h6>
 
@@ -498,21 +529,21 @@
     			<td>
 			    	<ul style="margin-top:20px; font-size:80%;">
 			    		<li class="fragment">Web Storage</li>
-			    		<li class="fragment">WebSQL &amp; IndexedDB</li>
 			    		<li class="fragment">Offline Web Applications</li>
 			    		<li class="fragment">WebWorkers</li>
 			    		<li class="fragment">WebSockets</li>
 			    		<li class="fragment">Geolocation</li>
+			    		<li class="fragment">Device orientation</li>
 			    	</ul>
     			</td>
     			<td>
 					<ul style="margin-top:20px; font-size:80%;">
-						<li class="fragment">Device orientation</li>
-						<li class="fragment">Speech input</li>
-						<li class="fragment">Video &amp; Audio</li>
 						<li class="fragment">Touch events</li>
+						<li class="fragment">Video &amp; Audio</li>
+						<li class="fragment">Speech input</li>
 						<li class="fragment">Canvas 2D</li>
 						<li class="fragment">SVG</li>
+						<li class="fragment">WebSQL &amp; IndexedDB</li>
 					</ul>
     			</td>
     		</tr>
@@ -521,31 +552,22 @@
     </section>
 
     <section data-markdown="webstorage.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
-    <section data-markdown="websql.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
-    <section data-markdown="indexeddb.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
     <section data-markdown="offlineapps.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
     <section data-markdown="webworkers.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
     <section data-markdown="websockets.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
-    <section data-markdown="geolocation.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+	<section data-markdown="geolocation.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
     <section>
-
     	<section data-markdown="deviceorientation.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
-
     	<section>
     		<h6>API<small>uri</small></h6>
     		<h2>Device orientation change</h2>
-
     		<img src="imgs/orientation/portrait.png" height="500" />
-
     	</section>
     	<section>
     		<h6>API<small>uri</small></h6>
     		<h2>Device orientation change</h2>
-
     		<img src="imgs/orientation/landscape.png" height="500" />
-
     	</section>
-
     	<section>
     		<img src="imgs/orientation/landscape2.png" height="500" />
     	</section>
@@ -556,11 +578,20 @@
     		<img src="imgs/orientation/landscape4.png" height="500" />
     	</section>
     </section>
-    <section data-markdown="speech.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
-    <section data-markdown="video_audio.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+
     <section data-markdown="touch_events.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
     <section>
+    	<section>
+			<h6>API<small>uri</small></h6>
+			<h2>Video &amp; Audio</h2>
+    		<img src="imgs/hoisescu_bodark.jpg" height="500" />
+    	</section>
+    	<section data-markdown="video_audio.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+    </section>
+    <section data-markdown="speech.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+    <section>
 		<section data-markdown="canvas.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+		<section data-markdown="canvas_raf.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
 		<section data-markdown="canvas_screenshots_screen.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
 		<section data-markdown="canvas_screenshots_canvas.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
     </section>
@@ -569,19 +600,25 @@
     	<section>
     		<h6>API<small>uri</small></h6>
 			<h2>SVG</h2>
-
 			<img src="imgs/svg/raster.png">
-
 			<img src="imgs/svg/svg.png">
     	</section>
 	</section>
+    <section data-markdown="websql.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
+    <section data-markdown="indexeddb.md" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:" data-charset="utf-8"></section>
 
 
 
 
 
-	<section>
-		<h2>Pauza</h2>
+
+
+
+
+
+    <section>
+    	<h1>Intrebari</h1>
+    	<small>Urmeaza studii de caz</small>
 		<!-- slide cu cpanel, cart, github -->
 		<!-- slide 'Sa ne cunoastem' -->
 		<!-- Slide 'Cati dintre voi au folosit pana acum HTML5 in productie?' -->
@@ -591,7 +628,12 @@
 		<!-- explicatie sumar/structura prezentare/pauze -->
 		<!-- poze cu deviceuri -->
 		<!-- mentiune CSS3 3d transforms -->
-	</section>
+    </section>
+
+    <section>
+    	<h1 class="em2">Pauza</h1>
+    	<p style="margin-top:20px; font-size:80%;">20 min</p>
+    </section>
 
 	<section>
 		<h2>Studii de caz</h2>
@@ -678,7 +720,9 @@
 		<h6>Studii de caz</h6>
 		<h2>Avangate Visitor Web App</h2>
 
-		<img src="imgs/av_visitor/entrance.jpg" style="border:2px solid white;" />
+		<img src="imgs/av_visitor/entrance_by_liviu.png" height="400" />
+
+		<p style="margin-top:20px; font-size:80%;">Demo: <a href="http://avdev.ghita.org/">remote</a></p>
 		<!-- @todo: gasit poza -->
 		<!-- descriere -->
 		<!-- obiective mele -->
@@ -721,6 +765,10 @@
 	</div>
 </div>
 
+
+<div id="sticky-footer">
+	<div><img src="imgs/avangate-new-logo.png" style="height:10px;"> <span>Tech Sessions @ 2013</span></div>
+</div>
 
 
 
